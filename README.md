@@ -1,6 +1,6 @@
 # animation
 
-#### timer link -- https://timer-jss.netlify.app/ ✔
+#### timer link -- https://timer-js-app.netlify.app/ ✔
 
 #### lodolist link -- https://todolist-js-app.netlify.app/ ✔
 
