@@ -32,23 +32,29 @@ startBtn.addEventListener("click", function (e) {
         let m = Number(min.value);
         let h = Number(hour.value);
         let d = Number(day.value);
-        sec.value = String(s - 1).padStart(2, 0);
-        if (sec.value == "00") {
-          min.value = String(m - 1).padStart(2, 0);
-          sec.value = 59;
-        }
-        if (min.value == "00") {
-          hour.value = String(h - 1).padStart(2, 0);
-          min.value = 59;
-        }
-        if (hour.value == "00") {
-          day.value = String(d - 1).padStart(2, 0);
-          hour.value = 23;
-        }
-        if (day.value == "00") {
+        if (d == 0 && m == 0 && s == 0 && h == 0) {
           heading.textContent = "Sizning vaqtingiz tugadi";
           heading.style.color = "red";
           clearInterval(vaqt);
+        }
+        sec.value = String(s - 1).padStart(2, 0);
+        if (sec.value == "-1") {
+          min.value = String(m - 1).padStart(2, 0);
+          sec.value = 59;
+        }
+        if (min.value == "-1") {
+          hour.value = String(h - 1).padStart(2, 0);
+          min.value = 59;
+        }
+        if (hour.value == "-1") {
+          day.value = String(d - 1).padStart(2, 0);
+          hour.value = 23;
+        }
+        if (day.value == "-1") {
+          min.value = "00";
+          sec.value = "00";
+          hour.value = "00";
+          day.value = "00";
         }
       }, 1000);
     } else {
