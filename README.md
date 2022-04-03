@@ -4,4 +4,4 @@
 
 #### lodolist link -- https://todolist-js-app.netlify.app/ ✔
 
-#### calc check link -- https://calc-check.netlify.app/ ✔
+#### calc check link -- https://calc-test-app.netlify.app/ ✔
