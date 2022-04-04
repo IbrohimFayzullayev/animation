@@ -1,4 +1,4 @@
-# animation
+# js projects
 
 #### timer link -- https://timer-js-app.netlify.app/ ✔
 
